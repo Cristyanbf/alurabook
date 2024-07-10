@@ -1,0 +1,122 @@
+.cabecalho_menu_hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+        
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+   
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container_img{
+    padding: 1em;
+}
+
+.lista_menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    text-decoration:none;
+    color: var(--preto);
+}
+
+.container_botao:checked ~ .lista_menu{
+    display: block;
+}
+.container_botao{
+    display: none;
+}
+.lista_menu_titulo, .lista_menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+   
+}
+
+.lista_menu_titulo{
+    color: var(--amarelo);
+    font-weight: 700;
+}
+
+.lista_menu_item{
+    color: var(--preto);
+    text-transform: uppercase;
+    
+}
+.container_titulo{
+    display: none;
+}
+.container_itens{
+    display: none;
+}
+.container_texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px ) {
+    .container_titulo , .container_titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        color: var(--preto);
+        font-size: 30px;
+        align-items: center;
+       
+    }
+    .container_titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container_titulo--negrito{
+        font-weight: 700;
+    }
+    .container_itens{
+        display: flex;
+    }
+    .container_links{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .container_img_transparente{
+        display: none;
+    }
+    .categoria_botao:checked ~ .lista_menu{
+        display: block;
+        width: auto;
+    }
+    .categoria_botao{
+        display:none;
+    }
+    
+}
+
+@media screen and (min-width: 1728px ) {
+    .container_texto{
+        display: block;
+        text-decoration: none;
+        font-family: var(--fonte-principal);
+        font-size: 20px;
+        font-weight: 400;    
+    }
+    .container_itens{
+        margin-left: 2em;
+        margin-right: auto;
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+}

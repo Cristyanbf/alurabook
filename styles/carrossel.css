@@ -1,0 +1,132 @@
+.carrossel_titulo{
+    background-color: var(--branco);
+    color: var(--amarelo);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev , .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+.card{
+    display: flex;
+    background-color: var(--branco);
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+    border-radius:10px;
+}
+.card_titulo{
+    color: var(--amarelo);
+    font-weight: 700;
+}
+.card_subtilulo{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1em 0;
+}
+.card_texto{
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    padding: 0 1em 0 0;
+}
+.itens{
+    display:flex;
+    align-items: center;
+   
+}
+.botoes_itens{
+    margin: 0.5em 0.5em;
+    display:flex;
+}
+
+
+.botao{
+    margin: 1em 0;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1em 2.2em;
+    text-decoration:none;   
+}
+
+.lista_estrelas{
+    display: flex;
+    margin-bottom: 1em;
+}
+.itens_estrela{
+    padding: 0.1em;
+}
+
+
+@media screen and (min-width: 1024px ) {
+
+    .carrossel_titulo{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+        
+    }
+    .swiper{
+        width: 60%;
+        
+    }
+    .swiper img{
+        box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+    
+    }
+
+    .swiper-button-prev , .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px ) {
+    .container_carrossel{
+        display: flex;
+        align-items: center;
+        margin: 2em 15vw;        
+    }
+    
+    .swiper-pagination{
+        margin: 1em 0 2em 0;        
+    }
+    .swiper-slide img{
+        width: 90%;
+    }
+    .card_titulo{
+    font-size: 32px;
+    }
+    .card_subtilulo{
+        font-size: 18px;
+    }
+    .card_texto{
+        font-size: 16px;
+    }
+    .card{
+        width: 60%;
+        margin-left: 3em;
+        align-items: center;
+    }
+
+}
